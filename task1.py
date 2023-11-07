@@ -8,6 +8,12 @@
 # block so that the user will keep entering in a number
 # until they have entered a value integer value
 
-number = input("Please enter in an integer value")
-number = int(number)
-print(number)
+x = input("Please enter in an integer value: ")
+
+try:
+    x = int(x)
+except:
+    print("nuh uh bud")
+    x = 7
+
+print(x)
